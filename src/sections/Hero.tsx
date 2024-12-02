@@ -7,7 +7,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-55 relative z-0 overflow-x-clip">
+    <div className="py-32 md:py-40 lg:py-45 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -136,7 +136,8 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl">
-            Building Exceptional User Experinces
+            Welcome to my Studio This is <span className="tracking-widest bg-gradient-to-r from-emerald-300
+           to-sky-400 text-transparent bg-clip-text">Mohamed Saeed</span>  with you
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specilazing in transforming designs into functional,
