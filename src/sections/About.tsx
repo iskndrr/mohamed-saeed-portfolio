@@ -101,7 +101,7 @@ const hobbies = [
 ];
 
 export const AboutSection = () => {
-  const constraintRef = useRef();
+  const constraintRef = useRef()
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
@@ -151,7 +151,7 @@ export const AboutSection = () => {
                 title="Beyond the code"
                 description="Explore my interests and hobbies beyond the digital realm."
               />
-              <div className="relative flex-1" ref={constraintRef}>
+              <div className="relative flex-1" >
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
@@ -166,7 +166,8 @@ export const AboutSection = () => {
                       top: hobby.top,
                     }}
                     drag
-                    dragConstraints={constraintRef}
+                    
+                    
                   >
                     <span className="font-medium text-gray-950">
                       {hobby.title}
