@@ -15,7 +15,7 @@ import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxIcon } from "@/components/ToolboxIcon";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 import { useRef } from "react";
 const toolboxItems = [
   {
@@ -101,7 +101,7 @@ const hobbies = [
 ];
 
 export const AboutSection = () => {
-  const constraintRef = useRef()
+  const constraintRef = useRef();
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
@@ -133,7 +133,10 @@ export const AboutSection = () => {
                 description="Explore the technolgies and tools I use to craft exeptional
                 digital experinces."
               />
-              <ToolboxIcon items={toolboxItems} itemsWrapperClassName="animate-move-left [animation-duration:50s]" />
+              <ToolboxIcon
+                items={toolboxItems}
+                itemsWrapperClassName="animate-move-left [animation-duration:50s]"
+              />
               <ToolboxIcon
                 items={toolboxItems}
                 className="mt-6 "
